@@ -38,7 +38,7 @@ spec:
         - name: default-domain
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/default-domain@sha256:b199b0da37dd0f399c585759487e9b44458c5fd2ef62a35c53b4979141fe4216
+          image: registry.cn-chengdu.aliyuncs.com/ab_personal/knative-v1.8-images:default-domain_1.8.3
           args: ["-magic-dns=sslip.io"]
           ports:
             - name: http
